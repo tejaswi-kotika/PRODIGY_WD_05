@@ -1,0 +1,130 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #000;  /* Black background */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+/* Weather Container */
+.weather-container {
+    background: linear-gradient(45deg, #ff416c, #ff4b2b); /* Flaming gradient */
+    animation: flameColors 4s infinite alternate; /* Color changing animation */
+    border-radius: 20px;
+    box-shadow: 0 12px 40px rgba(255, 69, 0, 0.7); /* Orange glowing shadow */
+    text-align: center;
+    padding: 40px;
+    width: 90%;
+    max-width: 450px;
+    opacity: 0.95;
+    transition: transform 0.3s;
+}
+
+.weather-container:hover {
+    transform: translateY(-8px);  /* Hover effect */
+}
+
+/* Heading */
+h1 {
+    font-size: 2.8rem;
+    margin-bottom: 25px;
+}
+
+/* Input Field */
+input {
+    width: 80%;
+    padding: 15px;
+    margin: 15px 0;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+
+input:focus {
+    box-shadow: 0 0 15px rgba(255, 165, 0, 0.8);
+}
+
+/* Buttons */
+button {
+    padding: 14px 35px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    color: white;
+}
+
+/* Search Button */
+button:nth-child(2) {
+    background: #ff5733;
+}
+
+/* Another Action Button */
+button:nth-child(3) {
+    background: #c70039;
+}
+
+/* Hover Effect for Buttons */
+button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 20px rgba(255, 87, 51, 0.9);
+}
+
+/* Use My Location Button */
+button:nth-child(4) {
+    background: #ffcc29;  /* Bright yellow-orange */
+    color: #000;          /* Black text for contrast */
+    font-weight: bold;
+}
+
+button:nth-child(4):hover {
+    background: #ffdd44;  /* Lighter shade on hover */
+    box-shadow: 0 0 20px rgba(255, 204, 41, 0.9);  /* Yellow glow */
+    transform: translateY(-4px);
+}
+
+/* Weather Info */
+.weather-info {
+    margin-top: 30px;
+    padding: 25px;
+    background: rgba(0, 0, 0, 0.7);  /* Slight transparency */
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(255, 69, 0, 0.5);
+}
+
+.temp-info p {
+    font-size: 2.5rem;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.extra-info p {
+    font-size: 1.2rem;
+    margin: 12px 0;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+/* Keyframes for Color Changing Effect */
+@keyframes flameColors {
+    0% {
+        background: linear-gradient(45deg, #ff5733, #c70039);
+    }
+    50% {
+        background: linear-gradient(45deg, #ff4b2b, #ff8c00);
+    }
+    100% {
+        background: linear-gradient(45deg, #ff6f61, #ff3f34);
+    }
+}
